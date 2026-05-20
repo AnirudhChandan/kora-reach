@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# project artifacts
+repomix-output.xml
+LOGO Kora Reach/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
