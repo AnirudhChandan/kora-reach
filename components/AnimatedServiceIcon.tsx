@@ -2,7 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 
-type ServiceType = "community" | "daily" | "capacity" | "transport";
+type ServiceType =
+  | "community"
+  | "daily"
+  | "capacity"
+  | "transport"
+  | "coordination";
 
 const paths: Record<ServiceType, { viewBox: string; elements: { d: string; stroke?: boolean; fill?: boolean }[] }> = {
   community: {
@@ -107,6 +112,25 @@ const paths: Record<ServiceType, { viewBox: string; elements: { d: string; strok
       // speed lines
       { d: "M5 75 H15", stroke: true },
       { d: "M8 82 H18", stroke: true },
+    ],
+  },
+  coordination: {
+    viewBox: "0 0 120 120",
+    elements: [
+      // central hub
+      { d: "M60 68 a10 10 0 1 0 0-20 a10 10 0 1 0 0 20", stroke: true },
+      // checkmark inside hub
+      { d: "M55 58 l3.5 3.5 l6 -7", stroke: true },
+      // outer nodes
+      { d: "M30 39 a6 6 0 1 0 0-12 a6 6 0 1 0 0 12", stroke: true },
+      { d: "M90 39 a6 6 0 1 0 0-12 a6 6 0 1 0 0 12", stroke: true },
+      { d: "M30 94 a6 6 0 1 0 0-12 a6 6 0 1 0 0 12", stroke: true },
+      { d: "M90 94 a6 6 0 1 0 0-12 a6 6 0 1 0 0 12", stroke: true },
+      // connecting spokes
+      { d: "M53 52 L35 39", stroke: true },
+      { d: "M67 52 L85 39", stroke: true },
+      { d: "M53 64 L35 83", stroke: true },
+      { d: "M67 64 L85 83", stroke: true },
     ],
   },
 };

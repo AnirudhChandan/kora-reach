@@ -15,8 +15,7 @@ export default function Footer() {
             className="h-12 w-auto mb-4 brightness-0 invert"
           />
           <p className="text-white/50 leading-relaxed font-sans text-sm">
-            Dedicated NDIS disability support provider based in Melbourne,
-            Victoria. Registered and quality-assured.
+            Dedicated NDIS disability support provider based in Victoria.
           </p>
         </div>
 
@@ -30,6 +29,7 @@ export default function Footer() {
               { name: "Daily Living Support", href: "/services/daily-living" },
               { name: "Capacity Building", href: "/services/capacity-building" },
               { name: "Transport Support", href: "/services/transport-support" },
+              { name: "Support Coordination", href: "/services/support-coordination" },
             ].map((link) => (
               <li key={link.name}>
                 <Link
@@ -73,11 +73,11 @@ export default function Footer() {
           <ul className="space-y-4 font-sans text-sm">
             <li>
               <a
-                href="tel:1300000000"
+                href="tel:0439821300"
                 className="flex items-center gap-3 text-white/60 hover:text-white transition-colors"
               >
                 <Phone size={16} className="shrink-0" />
-                1300 XXX XXX
+                0439 821 300
               </a>
             </li>
             <li>
@@ -91,18 +91,9 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-3 text-white/60">
               <MapPin size={16} className="shrink-0 mt-0.5" />
-              Melbourne, Victoria
+              Victoria, Australia
             </li>
           </ul>
-
-          <div className="mt-6 pt-6 border-t border-white/10">
-            <p className="text-white/40 text-xs font-sans">
-              ABN: [Insert ABN Here]
-            </p>
-            <p className="text-white/40 text-xs font-sans mt-1">
-              NDIS: [Insert Registration Number]
-            </p>
-          </div>
         </div>
       </div>
 
@@ -110,9 +101,6 @@ export default function Footer() {
         <p className="text-white/30 text-sm font-sans">
           &copy; {new Date().getFullYear()} Kora Reach Support Services. All
           rights reserved.
-        </p>
-        <p className="text-white/20 text-xs font-sans">
-          NDIS Registered Provider
         </p>
       </div>
     </footer>

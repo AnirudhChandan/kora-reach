@@ -59,7 +59,7 @@ export default function FloatingHelp() {
 
           <div className="p-4 space-y-2">
             <a
-              href="tel:1300000000"
+              href="tel:0439821300"
               className="flex items-center gap-4 p-4 rounded-xl hover:bg-brand-lightGreen/50 transition-colors group"
             >
               <div className="w-10 h-10 rounded-full bg-brand-lightGreen flex items-center justify-center shrink-0">
@@ -70,7 +70,7 @@ export default function FloatingHelp() {
                   Call Us
                 </p>
                 <p className="font-sans text-brand-dark/50 text-xs">
-                  1300 XXX XXX
+                  0439 821 300
                 </p>
               </div>
             </a>

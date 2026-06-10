@@ -363,17 +363,17 @@ function ContactForm() {
                       </FormField>
 
                       <FormField
-                        label="Participant's Suburb (Melbourne) *"
+                        label="Participant's Suburb (Victoria) *"
                         error={errors.suburb?.message}
                       >
                         <input
                           {...register("suburb")}
-                          list="melbourne-suburbs"
+                          list="victoria-suburbs"
                           className="w-full p-4 rounded-xl border border-gray-200 input-focus"
                           placeholder="Start typing a suburb..."
                           autoComplete="off"
                         />
-                        <datalist id="melbourne-suburbs">
+                        <datalist id="victoria-suburbs">
                           <option value="Richmond, 3121" />
                           <option value="Brunswick, 3056" />
                           <option value="St Kilda, 3182" />

@@ -15,11 +15,11 @@ export default function TopBanner() {
         </div>
         <div className="flex items-center gap-4">
           <a
-            href="tel:1300000000"
+            href="tel:0439821300"
             className="flex items-center gap-2 hover:text-brand-lightGreen transition-colors hitbox-expand"
           >
             <Phone size={14} />{" "}
-            <span className="font-semibold">1300 XXX XXX</span>
+            <span className="font-semibold">0439 821 300</span>
           </a>
         </div>
       </div>

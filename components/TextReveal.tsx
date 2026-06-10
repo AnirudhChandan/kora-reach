@@ -8,6 +8,7 @@ type Props = {
   className?: string;
   delay?: number;
   stagger?: number;
+  firstWordClassName?: string;
 };
 
 export default function TextReveal({
@@ -16,6 +17,7 @@ export default function TextReveal({
   className = "",
   delay = 0,
   stagger = 60,
+  firstWordClassName = "",
 }: Props) {
   const ref = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -54,7 +56,7 @@ export default function TextReveal({
           style={{ marginRight: "0.3em" }}
         >
           <span
-            className="inline-block transition-all ease-[var(--ease-smooth)]"
+            className={`inline-block transition-all ease-[var(--ease-smooth)] ${i === 0 ? firstWordClassName : ""}`}
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? "translateY(0)" : "translateY(100%)",

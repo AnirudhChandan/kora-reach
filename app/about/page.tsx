@@ -12,7 +12,7 @@ export default function AboutPage() {
             <div className="max-w-3xl">
               <h1 className="mb-8">About Kora Reach</h1>
               <p className="text-2xl text-brand-dark/80 font-sans leading-relaxed">
-                We are a dedicated NDIS provider in Melbourne, built on the belief
+                We are a dedicated NDIS provider in Victoria, built on the belief
                 that disability support should be personal, reliable, and entirely
                 focused on your goals.
               </p>
@@ -52,8 +52,8 @@ export default function AboutPage() {
                   Who We Work With
                 </h3>
                 <p className="text-brand-dark/70 font-sans">
-                  We support NDIS participants across the Melbourne metropolitan
-                  area who are self-managed or plan-managed.
+                  We support NDIS participants across Victoria who are
+                  self-managed or plan-managed.
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function AboutPage() {
       <section className="py-32 text-center bg-brand-warmNeutral">
         <div className="container-custom">
           <ScrollReveal>
-            <h2 className="mb-6">Looking for support in Melbourne?</h2>
+            <h2 className="mb-6">Looking for support in Victoria?</h2>
             <p className="text-xl text-brand-dark/70 mb-10 max-w-2xl mx-auto font-sans leading-relaxed">
               Reach out to our intake team today to discuss your NDIS plan and how
               we can assist you.

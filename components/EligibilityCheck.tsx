@@ -22,8 +22,8 @@ const questions = [
     hint: "We work with self-managed and plan-managed participants. NDIA-managed participants may need a registered provider.",
   },
   {
-    question: "Are you located in the Melbourne metro area?",
-    hint: "We currently serve participants across inner, eastern, northern, and western Melbourne suburbs.",
+    question: "Are you located in Victoria?",
+    hint: "We currently serve participants across Victoria.",
   },
 ];
 

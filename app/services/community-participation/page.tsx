@@ -30,8 +30,8 @@ export default function CommunityParticipation() {
             </div>
           </div>
           <p className="text-xl text-brand-dark/80 max-w-2xl font-sans">
-            Get out, get active, and connect with your local Melbourne
-            community. We provide the support you need to engage in the
+            Get out, get active, and connect with your local community across
+            Victoria. We provide the support you need to engage in the
             activities you enjoy.
           </p>
         </div>

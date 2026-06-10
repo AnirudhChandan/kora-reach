@@ -94,7 +94,7 @@ export default function PrivacyPage() {
                   >
                     info@korareach.com.au
                   </a>{" "}
-                  or call 1300 XXX XXX.
+                  or call 0439 821 300.
                 </p>
               </div>
             </div>

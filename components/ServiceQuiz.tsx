@@ -72,7 +72,7 @@ const services: Record<string, ServiceInfo> = {
   community: {
     id: "community",
     title: "Community Participation",
-    description: "Get out, get active, and connect with your local Melbourne community with a support worker by your side.",
+    description: "Get out, get active, and connect with your local community across Victoria with a support worker by your side.",
     href: "/services/community-participation",
     color: "from-blue-500/10 to-teal-500/10",
   },

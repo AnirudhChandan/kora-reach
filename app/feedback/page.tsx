@@ -40,7 +40,7 @@ export default function FeedbackPage() {
                 <h2 className="text-2xl mb-4">How to Provide Feedback</h2>
                 <div className="grid gap-4 mt-6">
                   <a
-                    href="tel:1300000000"
+                    href="tel:0439821300"
                     className="flex items-center gap-4 p-6 rounded-2xl border border-brand-lightGreen hover:bg-brand-lightGreen/30 transition-colors card-glow"
                   >
                     <div className="w-12 h-12 rounded-full bg-brand-lightGreen flex items-center justify-center shrink-0">
@@ -51,13 +51,13 @@ export default function FeedbackPage() {
                         Call Us
                       </p>
                       <p className="text-brand-dark/50 text-sm">
-                        1300 XXX XXX — Mon to Fri, 9am - 5pm
+                        0439 821 300 — Mon to Fri, 9am - 5pm
                       </p>
                     </div>
                   </a>
 
                   <a
-                    href="mailto:feedback@korareach.com.au"
+                    href="mailto:info@korareach.com.au"
                     className="flex items-center gap-4 p-6 rounded-2xl border border-brand-lightGreen hover:bg-brand-lightGreen/30 transition-colors card-glow"
                   >
                     <div className="w-12 h-12 rounded-full bg-brand-lightGreen flex items-center justify-center shrink-0">
@@ -68,7 +68,7 @@ export default function FeedbackPage() {
                         Email Us
                       </p>
                       <p className="text-brand-dark/50 text-sm">
-                        feedback@korareach.com.au
+                        info@korareach.com.au
                       </p>
                     </div>
                   </a>

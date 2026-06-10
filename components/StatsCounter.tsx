@@ -9,10 +9,8 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { value: 500, suffix: "+", label: "Participants Supported" },
   { value: 98, suffix: "%", label: "Would Recommend" },
   { value: 48, suffix: "hr", label: "Average Response Time" },
-  { value: 4.9, suffix: "★", label: "Google Rating" },
 ];
 
 function useCountUp(target: number, duration: number, start: boolean) {
@@ -96,7 +94,7 @@ export default function StatsCounter() {
   return (
     <section ref={ref} className="py-20 bg-white border-y border-brand-lightGreen/50">
       <div className="container-custom">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 gap-8 md:gap-12 max-w-xl mx-auto">
           {stats.map((stat, i) => (
             <StatItem key={stat.label} stat={stat} start={visible} delay={i * 150} />
           ))}

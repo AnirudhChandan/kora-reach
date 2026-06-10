@@ -6,14 +6,19 @@ import ServiceCompare from "@/components/ServiceCompare";
 import AnimatedServiceIcon from "@/components/AnimatedServiceIcon";
 import TiltCard from "@/components/TiltCard";
 
-type ServiceIconType = "community" | "daily" | "capacity" | "transport";
+type ServiceIconType =
+  | "community"
+  | "daily"
+  | "capacity"
+  | "transport"
+  | "coordination";
 
 const services: { id: string; title: string; iconType: ServiceIconType; desc: string; href: string }[] = [
   {
     id: "community-participation",
     title: "Community Participation",
     iconType: "community",
-    desc: "Support to engage in social, recreational, and civic activities in your local Melbourne community.",
+    desc: "Support to engage in social, recreational, and civic activities in your local community across Victoria.",
     href: "/services/community-participation",
   },
   {
@@ -37,6 +42,13 @@ const services: { id: string; title: string; iconType: ServiceIconType; desc: st
     desc: "Safe and reliable transport to appointments, work, study, or community events.",
     href: "/services/transport-support",
   },
+  {
+    id: "support-coordination",
+    title: "Support Coordination",
+    iconType: "coordination",
+    desc: "Help understanding your NDIS plan, connecting with the right providers, and coordinating your supports with confidence.",
+    href: "/services/support-coordination",
+  },
 ];
 
 export default function ServicesOverview() {
@@ -47,7 +59,7 @@ export default function ServicesOverview() {
           <ScrollReveal>
             <h1 className="text-5xl md:text-6xl mb-6">Our Services</h1>
             <p className="text-xl text-brand-dark/80 max-w-2xl font-sans leading-relaxed">
-              We provide tailored, flexible NDIS support across Melbourne. Explore
+              We provide tailored, flexible NDIS support across Victoria. Explore
               our core services below to see how we can assist you in reaching
               your goals.
             </p>

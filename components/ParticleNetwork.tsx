@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useCallback } from "react";
+import { useEffect, useRef, useCallback, useState } from "react";
 
 type Particle = {
   x: number;
@@ -21,7 +21,7 @@ export default function ParticleNetwork({ className = "" }: { className?: string
   const particlesRef = useRef<Particle[]>([]);
   const mouseRef = useRef({ x: -9999, y: -9999 });
   const rafRef = useRef<number>(0);
-  const isLowStimRef = useRef(false);
+  const [isLowStim, setIsLowStim] = useState(false);
 
   const initParticles = useCallback((w: number, h: number) => {
     const particles: Particle[] = [];
@@ -43,7 +43,7 @@ export default function ParticleNetwork({ className = "" }: { className?: string
     if (!canvas) return;
 
     if (document.documentElement.classList.contains("low-stim")) {
-      isLowStimRef.current = true;
+      setIsLowStim(true);
       return;
     }
 
@@ -168,7 +168,7 @@ export default function ParticleNetwork({ className = "" }: { className?: string
     };
   }, [initParticles]);
 
-  if (isLowStimRef.current) return null;
+  if (isLowStim) return null;
 
   return (
     <canvas

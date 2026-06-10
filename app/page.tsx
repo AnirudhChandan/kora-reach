@@ -12,7 +12,6 @@ import JourneyTimeline from "@/components/JourneyTimeline";
 import ParticleNetwork from "@/components/ParticleNetwork";
 import ServiceQuiz from "@/components/ServiceQuiz";
 import DayInTheLife from "@/components/DayInTheLife";
-import MelbourneMap from "@/components/MelbourneMap";
 
 export default function Home() {
   return (
@@ -27,9 +26,10 @@ export default function Home() {
                   as="h1"
                   className="mb-6"
                   delay={300}
+                  firstWordClassName="text-[0.8em]"
                 />
                 <p className="text-xl text-brand-dark/80 mb-8 font-sans leading-relaxed">
-                  Empowering NDIS participants across Melbourne to live
+                  Empowering NDIS participants across Victoria to live
                   independently and participate fully in their community.
                 </p>
                 <MagneticButton>
@@ -89,8 +89,6 @@ export default function Home() {
 
       <ServiceQuiz />
 
-      <MelbourneMap />
-
       <Testimonials />
 
       <WaveDivider
@@ -107,8 +105,7 @@ export default function Home() {
             <div className="max-w-xl">
               <h2 className="text-white mb-4">Ready to get started?</h2>
               <p className="text-white/80 font-sans text-xl leading-relaxed">
-                We are currently accepting new participants across the Melbourne
-                metropolitan area.
+                We are currently accepting new participants across Victoria.
               </p>
             </div>
             <MagneticButton>

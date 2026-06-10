@@ -21,9 +21,9 @@ const faqItems = [
       "No referral is needed. You can contact us directly, or your support coordinator, family member, or plan manager can reach out on your behalf. We just need your NDIS plan details to get started.",
   },
   {
-    question: "What areas of Melbourne do you cover?",
+    question: "What areas of Victoria do you cover?",
     answer:
-      "We currently provide services across the Melbourne metropolitan area, including inner city, eastern, northern, and western suburbs. Contact us to confirm coverage in your specific area.",
+      "We currently provide services across Victoria. Contact us to confirm coverage in your specific area.",
   },
   {
     question: "Can I meet my support worker before starting?",

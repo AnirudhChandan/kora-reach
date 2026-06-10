@@ -32,7 +32,7 @@ export default function NotFound() {
             />
           </Link>
           <a
-            href="tel:1300000000"
+            href="tel:0439821300"
             className="flex items-center gap-2 px-8 py-4 rounded-full border border-brand-lightGreen font-sans font-medium text-brand-dark hover:bg-brand-lightGreen transition-all"
           >
             <Phone size={18} />

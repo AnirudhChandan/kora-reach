@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 const trustBadges = [
-  { name: "NDIS Registered Provider", src: "/badges/ndis-registered.svg" },
   {
     name: "NDIS Quality & Safeguards Commission",
     src: "/badges/ndis-quality.svg",
